@@ -1,25 +1,27 @@
-import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'angular-form';
 
-  firstForm!: FormGroup;
-
-  constructor() {}
-
-  ngOnInit() {
-    //Step 1 radio validator
-    this.firstForm = new FormGroup({
-      Options: new FormControl(null, Validators.required),
-    });
-  }
+  formData: {
+    nome: string;
+    cognome: string;
+    age: string;
+    username: string;
+    password: string;
+  } = {
+    nome: '',
+    cognome: '',
+    age: '',
+    username: '',
+    password: '',
+  };
 
   onSubmit() {
-    console.log(this.firstForm);
+    console.log(this.formData);
   }
 }

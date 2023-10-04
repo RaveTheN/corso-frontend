@@ -82,28 +82,29 @@
     </svg>
   </div>
 
-  <form [formGroup]="firstForm" class="form-inputs">
+  <form (ngSubmit)="onSubmit()" class="form-inputs">
     <mat-form-field>
       <mat-label>Nome</mat-label>
-      <input matInput />
+      <input matInput placeholder="Nome" name="nome" />
     </mat-form-field>
     <mat-form-field>
       <mat-label>Cognome</mat-label>
-      <input matInput />
-    </mat-form-field>
-    <mat-form-field>
-      <mat-label>Età</mat-label>
-      <input matInput />
+      <input matInput placeholder="Cognome" name="cognome" />
     </mat-form-field>
     <mat-form-field>
       <mat-label>Nome Utente</mat-label>
-      <input matInput />
+      <input matInput placeholder="Username" name="username" />
     </mat-form-field>
     <mat-form-field>
-      <mat-label>Password</mat-label>
-      <input matInput />
+      <mat-label>Anni</mat-label>
+      <input matInput placeholder="18" name="anni" />
     </mat-form-field>
-    <button type="submit" (click)="onSubmit()">Invia</button>
+    <mat-form-field>
+      <mat-label>password</mat-label>
+      <input matInput type="password" placeholder="Password" name="password" />
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit">Submit</button>
   </form>
 
   <!-- Footer -->
