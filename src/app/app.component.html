@@ -85,23 +85,50 @@
   <form (ngSubmit)="onSubmit()" class="form-inputs">
     <mat-form-field>
       <mat-label>Nome</mat-label>
-      <input matInput placeholder="Nome" name="nome" />
+      <input
+        matInput
+        placeholder="es. Mario"
+        name="name"
+        [(ngModel)]="formData.name"
+      />
     </mat-form-field>
     <mat-form-field>
       <mat-label>Cognome</mat-label>
-      <input matInput placeholder="Cognome" name="cognome" />
+      <input
+        matInput
+        placeholder="es. Rossi"
+        name="lastname"
+        [(ngModel)]="formData.lastname"
+      />
     </mat-form-field>
     <mat-form-field>
       <mat-label>Nome Utente</mat-label>
-      <input matInput placeholder="Username" name="username" />
+      <input
+        matInput
+        placeholder="es. UserMario"
+        name="username"
+        [(ngModel)]="formData.username"
+      />
     </mat-form-field>
     <mat-form-field>
       <mat-label>Anni</mat-label>
-      <input matInput placeholder="18" name="anni" />
+      <input
+        matInput
+        type="number"
+        placeholder="es. 19"
+        name="age"
+        [(ngModel)]="formData.age"
+      />
     </mat-form-field>
     <mat-form-field>
       <mat-label>password</mat-label>
-      <input matInput type="password" placeholder="Password" name="password" />
+      <input
+        matInput
+        type="password"
+        placeholder="Password"
+        name="password"
+        [(ngModel)]="formData.password"
+      />
     </mat-form-field>
 
     <button mat-raised-button color="primary" type="submit">Submit</button>

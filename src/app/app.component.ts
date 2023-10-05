@@ -8,14 +8,14 @@ export class AppComponent {
   title = 'angular-form';
 
   formData: {
-    nome: string;
-    cognome: string;
+    name: string;
+    lastname: string;
     age: string;
     username: string;
     password: string;
   } = {
-    nome: '',
-    cognome: '',
+    name: '',
+    lastname: '',
     age: '',
     username: '',
     password: '',
