@@ -6,22 +6,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-form';
-
-  formData: {
-    name: string;
-    lastname: string;
-    age: string;
-    username: string;
-    password: string;
-  } = {
-    name: '',
-    lastname: '',
-    age: '',
-    username: '',
-    password: '',
-  };
-
-  onSubmit() {
-    console.log(this.formData);
-  }
 }

@@ -82,95 +82,30 @@
     </svg>
   </div>
 
-  <form (ngSubmit)="onSubmit()" class="form-inputs">
+  <form class="form-inputs" action="control.php" method="post">
     <mat-form-field>
       <mat-label>Nome</mat-label>
-      <input
-        matInput
-        placeholder="es. Mario"
-        name="name"
-        [(ngModel)]="formData.name"
-      />
+      <input matInput placeholder="es. Mario" name="name" />
     </mat-form-field>
     <mat-form-field>
       <mat-label>Cognome</mat-label>
-      <input
-        matInput
-        placeholder="es. Rossi"
-        name="lastname"
-        [(ngModel)]="formData.lastname"
-      />
+      <input matInput placeholder="es. Rossi" name="lastname" />
     </mat-form-field>
     <mat-form-field>
       <mat-label>Nome Utente</mat-label>
-      <input
-        matInput
-        placeholder="es. UserMario"
-        name="username"
-        [(ngModel)]="formData.username"
-      />
+      <input matInput placeholder="es. UserMario" name="username" />
     </mat-form-field>
     <mat-form-field>
       <mat-label>Anni</mat-label>
-      <input
-        matInput
-        type="number"
-        placeholder="es. 19"
-        name="age"
-        [(ngModel)]="formData.age"
-      />
+      <input matInput type="number" placeholder="es. 19" name="age" />
     </mat-form-field>
     <mat-form-field>
       <mat-label>password</mat-label>
-      <input
-        matInput
-        type="password"
-        placeholder="Password"
-        name="password"
-        [(ngModel)]="formData.password"
-      />
+      <input matInput type="password" placeholder="Password" name="password" />
     </mat-form-field>
 
     <button mat-raised-button color="primary" type="submit">Submit</button>
   </form>
-
-  <!-- Footer -->
-  <footer>
-    Love Angular?&nbsp;
-    <a href="https://github.com/angular/angular" target="_blank" rel="noopener">
-      Give our repo a star.
-      <div class="github-star-badge">
-        <svg
-          class="material-icons"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-        >
-          <path d="M0 0h24v24H0z" fill="none" />
-          <path
-            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-          />
-        </svg>
-        Star
-      </div>
-    </a>
-    <a href="https://github.com/angular/angular" target="_blank" rel="noopener">
-      <svg
-        class="material-icons"
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
-          fill="#1976d2"
-        />
-        <path d="M0 0h24v24H0z" fill="none" />
-      </svg>
-    </a>
-  </footer>
 
   <svg
     id="clouds"
